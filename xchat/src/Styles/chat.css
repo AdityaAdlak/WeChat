@@ -1,0 +1,176 @@
+
+.chatPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #d9d7f1, #f8f8f8);
+    padding: 20px;
+}
+
+.chatContainer {
+    width: 100%;
+    max-width: 450px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chatbox {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f8f8f8;
+}
+
+.message {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sent {
+    align-self: flex-end;
+    background: #ddd;
+    color: black;
+    border-bottom-right-radius: 5px;
+}
+
+.received {
+    align-self: flex-start;
+    background: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+}
+
+.inputBox {
+    display: flex;
+    padding: 12px;
+    background: white;
+    border-top: 1px solid #ddd;
+    align-items: center;
+}
+
+.inputBox input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: #f8f8f8;
+    color: black;
+}
+
+.inputBox input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 5px rgba(124, 58, 237, 0.5);
+}
+
+.inputBox button {
+    margin-left: 10px;
+    padding: 10px 14px;
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.inputBox button:hover {
+    background: #5b21b6;
+}
+
+@media screen and (max-width: 450px) {
+    .chatContainer {
+        width: 95%;
+        height: 85vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header {
+        font-size: 16px;
+    }
+
+    .inputBox input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .inputBox button {
+        padding: 8px 12px;
+    }
+}
+
+.admin-message {
+    align-self: center;
+    background: #7c3aed;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+}
+
+.admin-name {
+    font-size: 12px;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.header {
+    height: 60px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logo-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo-btn:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    filter: invert(1); 
+}

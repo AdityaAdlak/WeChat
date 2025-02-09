@@ -1,0 +1,82 @@
+
+.join-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #d9d7f1, #f8f8f8);
+  padding: 20px;
+}
+
+
+.join-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+.join-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+
+.join-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f8f8f8;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.join-input:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 6px rgba(124, 58, 237, 0.5);
+}
+
+
+.join-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #7c3aed;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.join-button:hover {
+  background: #5b21b6;
+  transform: scale(1.03);
+}
+
+
+.join-button.disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 450px) {
+  .join-box {
+      width: 90%;
+  }
+}
